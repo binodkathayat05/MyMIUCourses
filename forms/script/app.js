@@ -13,8 +13,12 @@ function loginSubmit() {
     check_out: document.getElementById("check-out").checked,
   };
 
-  alert(JSON.stringify(loginObject));
-  console.log(loginObject);
+  //alert(JSON.stringify(loginObject));
+// Printing the string
+var str = JSON.stringify(loginObject);
+// Printing the string
+document.write(str);
+console.log(str);
 }
 
 function productSubmit() {
