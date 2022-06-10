@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.3/cerulean/bootstrap.min.css"
+    integrity="sha512-CVn5BJ6vue0EG9CDO6yfg3hOvzQ43xEXOSUEkUtiV3pDy2S7O0saUZ0vbDkZYVX30NvqLLZo51JBzUyreGyqvg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
+    integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/app.js" defer></script>
+  <title>Home page</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">The South West - Regional Census</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Census Form</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <span>Saturday, 4 June 2022 - 11:26::35 AM</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <br>
+    <h3>Census Form</h3>
+    <hr>
+    <div>
+      <form id="censusForm" action="">
+        <div class="row census-form-row">
+          <div class="col-md-12">
+              <div class="form-group">
+                <label for="fullName">Full Name:*</label>
+                <input required type="text" name="fullName" id="fullName" class="form-control">
+              </div>
+          </div>
+        </div>
+
+        <div class="row census-form-row">
+          <div class="col-md-6">
+            <div class="form-group">
+            <label for="citizenId">Citizen ID:*</label>
+            <input placeholder="XXXXXXXXXX" pattern="\d{10}" required type="text" name="citizenId" id="citizenId" class="form-control">
+            <small  class="form-text text-muted">Enter your full name as per printed in your
+              government id.</small>
+          </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+            <label  for="ssn">Social Security N0:*</label>
+            <input placeholder="XXX-XX-XXXXX"  pattern="\d{3}-\d{2}-\d{5}" required type="text" name="ssn" id="socialSecurityNo" class="form-control">
+          </div>
+          </div>
+        </div>
+
+        <div class="row census-form-row">
+          <div class="col-md-6">
+            <div class="form-group">
+            <label for="state">State:*</label>
+            <select required name="state" id="state" class="form-control">
+              <option value="">Select state...</option>
+              <option value="Arizona">Arizona</option>
+              <option value="New Mexico">New Mexico</option>
+            </select>
+          </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+            <label>Is a senior Citizen?:*</label>
+            <div>
+            <input required type="radio" name="radBtnSnrCitizen" id="radBtnSnrCitizenYes" value="Yes">
+            <label for="radBtnSnrCitizenYes">Yes</label>
+            <input required type="radio" name="radBtnSnrCitizen" id="radBtnSnrCitizenNo" value="No">
+            <label for="radBtnSnrCitizenNo">No</label>
+          </div>
+          </div>
+          </div>
+        </div>
+        <div class="row census-form-row">
+          <div class="col-md-6">
+
+          </div>
+          <div class="col-md-6">
+            <input type="reset" class="btn btn-secondary" value="Reset">
+            <input type="submit" class="btn btn-primary" value="Submit">
+            <button id="buttoons">click</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </main>
+  <footer>
+    <section class="footer-left">
+      <span>Binod Kathayat:::CS472-WAP</span>
+    </section>
+    <section class="footer-right">
+      <span>&copy; June 2022</span>
+    </section>
+  </footer>
+</body>
+
+</html>

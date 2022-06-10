@@ -1,0 +1,33 @@
+.d-flex span{
+    color: white;
+}
+#imgleft{
+    float: right;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color:gainsboro;
+    width: 100vw;
+    display: flex;
+    min-height: 8vh;
+    align-items: center;
+}
+footer > section{
+    display: flex;
+    width: 50%;
+}
+footer .footer-right{
+    justify-content: end;
+}
+
+footer .footer-right span{
+    margin: 0 1em 0 1em;
+}
+
+footer .footer-left span{
+    margin: 0 1em 0 1em;
+}
+.census-form-row{
+    margin-bottom: 1.2em;
+}

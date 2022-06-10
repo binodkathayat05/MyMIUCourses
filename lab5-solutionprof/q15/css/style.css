@@ -1,0 +1,59 @@
+/* style.css */
+/* author: okalu */
+/* since: Friday, June 2nd, 2022 */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    background-color: blue;
+    color: aliceblue;
+    width: 100vw;
+}
+header h1 {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+nav {
+    background-color: antiquewhite;
+}
+nav ul {
+    list-style-type: none;
+}
+main {
+    border: 4px solid rgb(231, 11, 11);
+    display: grid;
+    width: 100vw;
+    height: 80vh;
+    place-items: center;
+}
+div#mainContent {
+    border: 1px solid gray;
+    width: 100;
+    display: grid;
+    place-items: center;
+}
+h1#clock {
+    margin: 1em;
+    font-size: 3em;
+}
+footer {
+    background-color: goldenrod;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 11vh;
+}
+footer section {
+    line-height: 10vh;
+    width: 50%;
+    margin: 0 1em 0 1em;
+    font-size: 2em;
+}
+footer section#copyrightInfo {
+    text-align: right;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" defer></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="col-md-8">
+                <ul>
+                    <li>The South West - Regional Census</li>
+                    <li><a href="home.html"> Home</a></li>
+                    <li><a href="form.html"> Census Form</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <span id="time">Time zone</span>
+            </div>
+        </div>
+    </header>
+    <!-- <div>
+        <form action="" autocomplete="on">
+            <fieldset>
+                <legend>My forms</legend>
+                <input type="text" id="name" value="Binod"><label for="name">Name:</label><br>
+                <input type="password" id="password"><label for="password">password:</label><br>
+                <input type="email" id="email"><label for="email">Email</label><br>
+                <input type="radio" name="radios" id="html" value="html"><label for="radio">HTML</label><br>
+                <input type="radio" name="radios" id="html" value="css"><label for="radio1">CSS</label><br>
+                <input name="checkbox1" type="checkbox"><label for="checkbox">Male</label><br>
+                <input name="checkbox" type="checkbox"><label for="checkbox1">Female</label><br>
+
+                <select name="sel" id="sels">
+                    <option value="ram">ram joshi</option>
+                    <option value="shyam">shyam bist</option>
+                    <option value="hari" selected> hari bhatta</option>
+                </select><br>
+                <textarea name="text" id="" cols="30" rows="10"></textarea>
+                <input type="submit">
+                <button onclick="alert('reset is clicket')">reset</button>
+                <input type="reset">
+
+
+                <input type="button">
+                <input type="checkbox">
+                <input type="color">
+                <input type="date">
+                <input type="datetime-local">
+                <input type="email">
+                <input type="file">
+                <input type="hidden">
+                <input type="image">
+                <input type="month">
+                <input type="number">
+                <input type="password">
+                <input type="radio">
+                <input type="range">
+                <input type="reset">
+                <input type="search">
+                <input type="submit">
+                <input type="tel">
+                <input type="text">
+                <input type="time">
+                <input type="url">
+                <input type="week">
+
+            </fieldset>
+        </form>
+
+
+    </div> -->
+
+
+    <main>
+
+        <div class="container">
+            <br>
+            <h3>Census Form</h3>
+            <hr>
+            <form action="" id="myform">
+                <div class="row row-margingcu">
+                    <div class="form-group">
+                        <label for="patientIdNo">*Patient ID No:</label>
+                        <!-- pattern="(P|EP)-\d{3}-\d{6}" required -->
+                        <input pattern="(P|EP)-\d{3}-\d{6}" required type="text" class="form-control" id="patientIdNo" name="patientIdNo"
+                            placeholder="EP-XXX-XXXXXX" autofocus>
+                        <small id="" class="form-text text-muted">Enter the patient ID Number in the specified
+                            format.</small>
+                    </div>
+                </div>
+                <div class="row row-margingcu">
+                    <div class="form-group col-md-4">
+                        <label for="firstName">*First Name:</label>
+                        <!-- pattern="\w{5}"  required -->
+                        <input required type="text" class="form-control" id="firstName" name="firstName"
+                            placeholder="Enter First Name">
+                        <small id="" class="form-text text-muted">Enter the Patient First Name</small>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="middleName">Middle Name:</label>
+                        <input type="text" class="form-control" id="middleName" name="firstName"
+                            placeholder="Enter Middle Initial(s)">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="lasttName">*Last Name:</label>
+                        <input  required type="text" class="form-control" id="lasttName" name="lasttName"
+                            placeholder="Enter Last Name">
+                        <small id="" class="form-text text-muted">Enter the Patient Last Name</small>
+                    </div>
+                </div>
+                <div class="row row-margingcu">
+                    <div class="form-group col-md-4">
+                        <label for="dob">*Date of birth:</label>
+                        <input required pattern="\d{1,2}/\d{1,2}/\d{4}"  type="text" class="form-control" id="dob" name="lasttName" placeholder="mm/dd/yyyy">
+                        <small id="" class="form-text text-muted">Enter the Patient Date of Birth</small>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="department">*Department:</label>
+                        <select required  id="department" class="form-control">
+                            <option value="">Select...</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Ear Nose and Throat">Ear Nose and Throat</option>
+                            <option value="Priamary Care">Priamary Care</option>
+                            <option value="(Unassigned)">(Unassigned)</option>
+                        </select>
+                        <small id="" class="form-text text-muted">Select Department of patient.</small>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <div><label for="exampleInputEmail1">*is this an Out-Patient?</label></div>
+                        <div class="form-check form-check-inline">
+                            <input required  class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioYes"
+                                value="Yes">
+                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input required class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioNo"
+                                value="No">
+                            <label class="form-check-label" for="inlineRadio2">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+
+                    </div>
+                    <div class="col-md-5">
+                        <input type="reset" class="btn btn-primary md1" value="Reset">
+                        <!-- <input type="submit" class="btn btn-primary mb2 value=" Submit"> -->
+                        <a class="btn btn-primary mb2" id="helloclick">register values</a>
+                    </div>
+                </div>
+                <div class="row row-margingcu">
+                    <div class="col-md-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="inlinecheckboelder"
+                                id="inlinecheckboelder" value="1">
+                            <label class="form-check-label" for="inlineRadio2">Show Elderly Patients only</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="outpatientonly"
+                                id="outpatientonly" value="1">
+                            <label class="form-check-label" for="inlineRadio2">Show Outpatients only</label>
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+            <div class="row">
+                <table class="table tablehide" id="tableadd">
+                    <thead>
+                      <tr>
+                        <th scope="col">Patient ID No</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Middle Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Date of Birth</th>
+                        <th scope="col">Department</th>
+                        <th scope="col">Out-patient?</th>
+                      </tr>
+                    </thead>
+                    <tbody id="insertvalue">
+                      
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-8">
+                Binod Kathayat:::CS472-WAP
+            </div>
+            <div class="col-md-4">
+                <span>&copy; June 2022</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

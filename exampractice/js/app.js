@@ -1,0 +1,1 @@
+document.getElementById(timezone).innerHTML=new Date();

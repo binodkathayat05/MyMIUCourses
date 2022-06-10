@@ -79,9 +79,17 @@ function findLongestWord(longword) {
 			logestword = longword[i];
 		}
 	}
-	return logestword;
+	return logestword.length;
 }
 console.log(findLongestWord(['hello world', 'i love my country nepal', 'wap is interesting', 'i got best professor']));
+
+function findLongestWord1(longword1) {
+	const llen=longword1.map(nmss=>nmss.length);
+	const malen=llen.reduce((acm,nmsss)=>Math.max(acm,nmsss),-Infinity);
+	return malen;
+}
+console.log(findLongestWord1(['hello world', 'i love my country nepal', 'wap is interesting', 'i got best professor']));
+
 
 
 /*7.	Write a function filterLongWords() that takes an array of words and an integer i
@@ -99,6 +107,14 @@ function filterLongWords(arrayfull, longerint) {
 }
 console.log(filterLongWords(['hellpo', 'worlds top country', 'my nearest', 'a', 'abc'], 4));
 console.log(filterLongWords(['hellpo', 'worlds top country', 'my nearest', 'a', 'abc'], 2));
+//another method
+function fiilterl(arrayl,intn){
+	const newvalue=arrayl[intn].length;
+	const fillw=arrayl.filter(xf=>xf.length>newvalue);
+	return fillw;
+}
+console.log(fiilterl(['hellpo', 'worlds top country', 'my nearest', 'a', 'abc'], 4));
+console.log(fiilterl(['hellpo', 'worlds top country', 'my nearest', 'a', 'abc'], 2));
 
 
 
@@ -112,7 +128,7 @@ function computeSumOfSquares(multiplier) {
 	var val = multiplier.reduce((accumulator, num) => accumulator + num * num, 0);
 	return val;
 }
-var total = computeSumOfSquares([1, 2, 3]);
+var total = computeSumOfSquares([1, 2, 3,4]);
 console.log(total);
 console.log(computeSumOfSquares([5, 2]));
 
@@ -211,8 +227,16 @@ function multreduce(multss) {
 	  }
 	 console.log(findSecondBiggest([1,2,3,4,5]));
 	 console.log(findSecondBiggest([19,9,11,0,12]));
-
-
+//another method
+	 function findsbg(arrsss)
+	 {
+		 const sbg=arrsss.reduce((sbgss,num)=>Math.max(sbgss,num),-Infinity);
+		 const sbgfil=arrsss.filter(xssss=>xssss!=sbg);
+		 const sbgfinal=sbgfil.reduce((sbgss,num)=>Math.max(sbgss,num),-Infinity);
+		 return sbgfinal;
+	 }
+	 console.log(findsbg([1,2,3,4,5]));
+	 console.log(findsbg([19,9,11,0,12]));
 
 
 

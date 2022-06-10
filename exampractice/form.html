@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" defer></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="col-md-8">
+                <ul>
+                    <li>The South West - Regional Census</li>
+                    <li><a href="home.html"> Home</a></li>
+                    <li><a href="form.html"> Census Form</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <span>Time zone</span>
+            </div>
+        </div>
+    </header>
+    <!-- <div>
+        <form action="" autocomplete="on">
+            <fieldset>
+                <legend>My forms</legend>
+                <input type="text" id="name" value="Binod"><label for="name">Name:</label><br>
+                <input type="password" id="password"><label for="password">password:</label><br>
+                <input type="email" id="email"><label for="email">Email</label><br>
+                <input type="radio" name="radios" id="html" value="html"><label for="radio">HTML</label><br>
+                <input type="radio" name="radios" id="html" value="css"><label for="radio1">CSS</label><br>
+                <input name="checkbox1" type="checkbox"><label for="checkbox">Male</label><br>
+                <input name="checkbox" type="checkbox"><label for="checkbox1">Female</label><br>
+
+                <select name="sel" id="sels">
+                    <option value="ram">ram joshi</option>
+                    <option value="shyam">shyam bist</option>
+                    <option value="hari" selected> hari bhatta</option>
+                </select><br>
+                <textarea name="text" id="" cols="30" rows="10"></textarea>
+                <input type="submit">
+                <button onclick="alert('reset is clicket')">reset</button>
+                <input type="reset">
+
+
+                <input type="button">
+                <input type="checkbox">
+                <input type="color">
+                <input type="date">
+                <input type="datetime-local">
+                <input type="email">
+                <input type="file">
+                <input type="hidden">
+                <input type="image">
+                <input type="month">
+                <input type="number">
+                <input type="password">
+                <input type="radio">
+                <input type="range">
+                <input type="reset">
+                <input type="search">
+                <input type="submit">
+                <input type="tel">
+                <input type="text">
+                <input type="time">
+                <input type="url">
+                <input type="week">
+
+            </fieldset>
+        </form>
+
+
+    </div> -->
+
+
+    <main>
+
+        <div class="container">
+            <br>
+            <h3>Census Form</h3>
+            <hr>
+            <form action="">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">*Full Name:</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter your Full Name" autofocus>
+                        <small id="emailHelp" class="form-text text-muted">Enter your full name as per printed in your
+                            government id.</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputEmail1">*Citizen ID:</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="XXXXXXXXXX">
+                        <small id="emailHelp" class="form-text text-muted">Enter your 10 digit Citizen ID.</small>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputEmail1">*Social Security Number:</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="XXX-XX-XXXX">
+                        <small id="emailHelp" class="form-text text-muted">Enter your 10 digits Social Security Number(in the format shown).</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputEmail1">*State:</label>
+                        <select id="disabledSelect" class="form-control">
+                            <option>IA</option>
+                            <option>PN</option>
+                            <option>NY</option>
+                          </select>
+                        <small id="emailHelp" class="form-text text-muted">Select your State of residence.</small>
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputEmail1">*senior citizen?:</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">2</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+
+                    </div>
+                    <div class="col-md-5">
+
+                        <button type="reset" class="btn btn-primary md1">Reset</button>
+
+
+                        <button type="submit" class="btn btn-primary mb2">Submit</button>
+
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-8">
+                Binod Kathayat:::CS472-WAP
+            </div>
+            <div class="col-md-4">
+                <span>&copy; June 2022</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

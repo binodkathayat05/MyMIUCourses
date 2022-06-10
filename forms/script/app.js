@@ -34,3 +34,37 @@ function productSubmit() {
   alert(JSON.stringify(productObj));
   console.log(productObj);
 }
+
+
+const user = { id: 4201, name: "Bob", isGraduate: true};
+const {id, name, isGraduate} = user;
+console.log(id + ", " + name  + ","  + isGraduate);
+
+const names = ["Anna", "Bob"];
+const [x, y] = names;
+console.log(x + ", " + y);
+
+var funcs = [];
+for (var i = 0; i < 5; i++) {
+funcs[i] = function() {
+return i;
+};
+}
+console.log(funcs[0]());
+console.log(funcs[1]());
+console.log(funcs[2]());
+console.log(funcs[3]());
+console.log(funcs[4]());
+
+var helper = function(n) {
+  return function() {return n;}
+  }
+  var funcs = [];
+  for (var i = 0; i < 5; i++) {
+  funcs[i] = helper(i);
+  };
+  console.log(funcs[0]());
+  console.log(funcs[1]());
+  console.log(funcs[2]());
+  console.log(funcs[3]());
+  console.log(funcs[4]());
